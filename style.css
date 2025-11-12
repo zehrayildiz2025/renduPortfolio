@@ -1,0 +1,41 @@
+
+body{
+    background-color: rgb(17, 17, 17);
+    color: white;
+
+}
+/* class container */
+.container {
+    margin: auto;
+    max-width: 800px;
+}
+/* #hero{
+    .container{
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+    }
+} */
+
+/* section header; logo, nav */
+.logo {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 30px;
+    padding-right: 12px;
+}
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
