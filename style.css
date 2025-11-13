@@ -185,6 +185,7 @@ ul li a {
 /* section banniere */
 #banniere {
     padding-block: 100px;
+    justify-content: space-around;
 }
 
 .space {
