@@ -1,29 +1,69 @@
-
-body{
-    background-color: rgb(17, 17, 17);
+body {
     color: white;
-
+    /* font-family: "Epilogue", sans-serif;  */
 }
+
+header {
+    background-color: black;
+}
+
+#banniere {
+    padding-block: 100px;
+}
+
 /* class container */
 .container {
     margin: auto;
     max-width: 800px;
 }
-/* #hero{
-    .container{
-        display: flex;
-        gap: 40px;
-        justify-content: center;
-    }
-} */
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.d-flexDeux {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.card-wrapper {
+    flex-wrap: wrap;
+}
+
+.section-padding {
+    margin: 35px 0px;
+
+}
+
+.img-card {
+    width: 250px;
+    height: 400px;
+}
+
+.card {
+    flex: 1;
+    height: 600px;
+}
+
+.cardDeux {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 300px;
+    padding: 25px;
+}
 
 /* section header; logo, nav */
 .logo {
     display: flex;
     justify-content: space-between;
     color: rgb(255, 255, 255);
-    margin-right: 20px;
-    margin-left: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 ul {
@@ -33,9 +73,107 @@ ul {
     gap: 30px;
     padding-right: 12px;
 }
+
+/* hero section */
+.button-hero {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 16px;
+    text-align: center;
+}
+
+#hero .columnCentered {
+    justify-content: left;
+}
+
 .hero-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 40px;
+}
+
+.columnCentered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.column-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.space {
+    justify-content: space-around;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-grey {
+    background-color: rgb(197, 195, 195);
+}
+
+.cl-black {
+    color: black;
+}
+
+.content {
+    display: flex;
+}
+
+#services .d-flex {
+    gap: 70px;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    padding: 25px;
+}
+
+/* section temoignages */
+.img_marion {
+    max-width: 50px;
+    min-width: 50px;
+    border-radius: 50px;
+}
+
+/* section footer */
+#footer {
+    p {
+        font-size: 17px;
+    }
+
+    input {
+        width: 250px;
+        margin: 5px;
+    }
+
+    .icon {
+        display: flex;
+        gap: 15px;
+        font-size: 15px;
+    }
+
+    button {
+        width: 100px;
+        height: 25px;
+    }
+
+    .d-flexDeux {
+        gap: 100px;
+    }
+
 }
