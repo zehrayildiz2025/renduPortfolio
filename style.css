@@ -1,26 +1,110 @@
 body {
     color: white;
-    /* font-family: "Epilogue", sans-serif;  */
+    font-family: "Epilogue", sans-serif;
+
+    p {
+        line-height: 20px;
+    }
 }
 
+/* section header; logo, nav */
 header {
-    background-color: black;
+    background-color: #292929;
+
+    p {
+        font-size: 20px;
+        font-weight: bold;
+    }
 }
 
-#banniere {
-    padding-block: 100px;
+.logo {
+    display: flex;
+    justify-content: space-between;
+    color: inherit;
+    padding-right: 40px;
+    padding-left: 60px;
 }
 
-/* class container */
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 30px;
+    padding-right: 12px;
+    font-size: 17px;
+}
+
+ul li a {
+    color: inherit;
+}
+
+/* hero section */
+.button-hero {
+    background-color: white;
+    color: #292929;
+    padding: 16px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 16px;
+    text-align: center;
+}
+
+#hero .columnCentered {
+    justify-content: left;
+}
+
+#hero .container {
+    max-width: 1100px;
+
+    span {
+        font-weight: bold;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    a {
+        font-weight: bold;
+        font-size: 14px;
+    }
+}
+
+.hero-padding {
+    padding: 75px 0;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+
+/* general classes */
 .container {
     margin: auto;
     max-width: 800px;
+}
+
+.flexOne {
+    flex: 1;
 }
 
 .d-flex {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 12px;
+}
+
+.card-flex {
+    display: flex;
+    justify-content: center;
     gap: 12px;
 }
 
@@ -35,65 +119,21 @@ header {
 }
 
 .section-padding {
-    margin: 35px 0px;
+    padding: 120px 0px;
 
 }
 
 .img-card {
     width: 250px;
-    height: 400px;
+
 }
 
-.card {
-    flex: 1;
-    height: 600px;
-}
-
-.cardDeux {
+.cardTemoignage {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    height: 300px;
-    padding: 25px;
-}
-
-/* section header; logo, nav */
-.logo {
-    display: flex;
-    justify-content: space-between;
-    color: rgb(255, 255, 255);
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
-ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    gap: 30px;
-    padding-right: 12px;
-}
-
-/* hero section */
-.button-hero {
-    background-color: white;
-    color: black;
-    padding: 20px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 16px;
-    text-align: center;
-}
-
-#hero .columnCentered {
-    justify-content: left;
-}
-
-.hero-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
+    padding: 8px 25px;
+    width: 250px;
+    background-color: rgb(197, 195, 195);
 }
 
 .columnCentered {
@@ -107,10 +147,7 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: left;
-}
-
-.space {
-    justify-content: space-around;
+    width: 40%;
 }
 
 .bg-white {
@@ -118,35 +155,50 @@ ul {
 }
 
 .bg-black {
-    background-color: black;
-}
-
-.bg-grey {
-    background-color: rgb(197, 195, 195);
+    background-color: #292929;
 }
 
 .cl-black {
-    color: black;
+    color: #292929;
 }
 
 .content {
     display: flex;
 }
 
+.title {
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+/* section services */
 #services .d-flex {
     gap: 70px;
 }
 
-.title {
+.text-center {
     text-align: center;
-    font-weight: bold;
-    padding: 25px;
+}
+
+/* section banniere */
+#banniere {
+    padding-block: 100px;
+}
+
+.space {
+    justify-content: space-around;
 }
 
 /* section temoignages */
+#temoignages {
+    padding-top: 0;
+}
+
 .img_marion {
-    max-width: 50px;
-    min-width: 50px;
+    width: 50px;
+    height: 50px;
     border-radius: 50px;
 }
 
@@ -159,6 +211,7 @@ ul {
     input {
         width: 250px;
         margin: 5px;
+        padding: 10px 20px;
     }
 
     .icon {
@@ -174,6 +227,16 @@ ul {
 
     .d-flexDeux {
         gap: 100px;
+        font-size: 8px;
     }
 
+    .container {
+        max-width: 1100px;
+    }
+}
+
+.flex-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
